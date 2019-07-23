@@ -1,6 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-
+const myDecrement = () => {
+  let count = 10; 
+  return function(){
+    count = count - 1; 
+    return count;
+  }
+};
+const newDec = myDecrement(); 
+console.log(newDec()); 
+console.log(newDec()); 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
